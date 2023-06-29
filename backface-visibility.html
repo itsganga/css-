@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>backface-visibility</title>
+<style>  
+.card{
+          height: 200px;
+		  width: 200px;
+		  border: 1px solid black;
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  margin: -200px;
+		  perspective: 500px;
+		
+  } 
+          .content{ 
+		  height: 100%;
+		  width: 100%;
+		 position: absolute;
+		 transition: transform 1s;
+		 transform-style: preserve-3d;
+		  }
+		  .card:hover{
+		               transform: rotateY(180deg);
+		  }
+  
+  .back, .front {
+                 height: 100%;
+		         width: 100%;
+		         position: absolute;
+				 background: #fff;
+				 color: pink;
+				 font-size: 60px;
+				 text-align: center;
+				 line-height: 300px;
+				 border-radius: 5px;
+				 backface-visibility: hidden;
+  
+  }
+  .back{
+         background: pink;
+				 color: #fff;
+				 transform: rotate(180deg);
+				 
+  
+  }
+  
+</style>
+</head>
+<body>
+<h1>backface-visibility</h1>
+<div class=card>
+<div class="content">
+<div class="front">front</div>
+<div class="back">Back</div>
+
+ </div>
+</div>
+</body>
+</html> 
