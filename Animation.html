@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>CSS Animation</title>
+<style>   
+    #box{
+	      height: 300px;
+		  width: 300px;
+		  background: gray;
+		  border: 1px solid black;
+		  position: absolute;
+		  line-height: 300px;
+		  top: 50%;
+		  left: 50%;
+		  margin: -150px;
+	     text-align: center;
+		 color: yellow;
+		 /*Animation-name: sample;
+		 Animation-duration: 2s;
+		 Animation-timing-function: cubic-bezier(0.6, 0.1, 1.0, 0.1);
+		 Animation-delay: 2s;
+		 Animation-iteration-count: infinite;
+		 Animation-direction:alternate;*/
+		 Animation: sample 2s cubic-bezier(0.6, 0.1, 1.0, 0.1) infinite alternate;
+		 
+		 }
+		 
+@keyframes sample{
+                   o%{border-radius: 0%; }
+				   25%{background-color: green;}
+				   50%{background-color: pink; }
+				   100%{border-radius: 50%; background-color: orange; color:black;}
+}
+	
+		 
+		 
+</style>
+<body>
+        <h1>CSS Animation<h1>
+		<div id="box"> GANGA</div>
+
+</body>
