@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>CSS Direct child selectors</title>
+<style>
+body{
+        font-size: 20px;
+		font-family: arial;
+}
+#box{
+       border: 2px solid black;
+	   margin: 0;
+	   padding: 20px;
+}
+#box1{
+       border: 2px solid black;
+	   margin: 0;
+	   padding: 20px;
+}
+#list li{
+           color: green;
+}
+#list >li{
+           color: blue;
+}
+#box > p{
+          color: yellow:
+}
+</style>
+</head>
+<body>
+<h1> CSS Descendant selectors</h1>
+<ul id="list">
+<li>botanical sources </li>
+<li>botanical sources </li>
+<li>botanical sources </li>
+<li>botanical sources </li>
+
+<ul>
+<li>botanical sources </li>
+<li>botanical sources </li>
+<li>botanical sources </li>
+<li>botanical sources </li>
+</ul>
+</ul>
+<div id="box">
+<p>Starch, which exists in various botanical sources such as potato, wheat, and corn, exhibits diverse structures and compositions. Regardless of the botanical origin, starch has amylose and amylopectin. These components are polymers of alpha-glucose units in the 4C1 conformation. In amylose, the glucose units arelinked (1-4), with the ring oxygen atoms positioned on the same side. In amylopectin, approximately one in every twenty glucose units is linked (1-6), forming branch-points. </p>
+<div id="box1"><p>Starch, which exists in various botanical sources such as potato, wheat, and corn, exhibits diverse structures and compositions. Regardless of the botanical origin, starch has amylose and amylopectin. These components are polymers of alpha-glucose units in the 4C1 conformation. In amylose, the glucose units arelinked (1-4), with the ring oxygen atoms positioned on the same side. In amylopectin, approximately one in every twenty glucose units is linked (1-6), forming branch-points. </p>
+</div>
+</div>
+</body>
+</html>
